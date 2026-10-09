@@ -2,17 +2,11 @@ name: Build Halo IM Android APK
 
 on:
   workflow_dispatch: {}
-  push:
-    tags: ['v*']
-
-permissions:
-  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
       ANDROID_GOOGLE_SERVICES_JSON: ${{ secrets.ANDROID_GOOGLE_SERVICES_JSON }}
     steps:
       - name: Checkout
@@ -28,9 +22,6 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
 
       - name: Install Android SDK packages
         run: |
