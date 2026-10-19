@@ -4,7 +4,7 @@
   "private": true,
   "description": "Halo IM — native iOS/Android wrapper (Capacitor) around the Ecofrost Halo IM messenger",
   "scripts": {
-    "assets": "capacitor-assets generate --iconBackgroundColor #000000 --iconBackgroundColorDark #000000 --splashBackgroundColor #0B1F3A --splashBackgroundColorDark #0B1F3A",
+    "assets": "capacitor-assets generate --iconBackgroundColor #141414 --iconBackgroundColorDark #141414 --splashBackgroundColor #141414 --splashBackgroundColorDark #141414",
     "sync": "cap sync",
     "open:ios": "cap open ios",
     "open:android": "cap open android"

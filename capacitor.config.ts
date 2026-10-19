@@ -14,11 +14,11 @@ const config: CapacitorConfig = {
     url: 'https://portal.ecofrost.ae/halo',
     cleartext: false,
   },
-  backgroundColor: '#0B1F3A',
+  backgroundColor: '#141414',
   ios: { contentInset: 'always', limitsNavigationsToAppBoundDomains: false },
   android: { allowMixedContent: false },
   plugins: {
-    SplashScreen: { launchShowDuration: 900, backgroundColor: '#0B1F3A', showSpinner: false },
+    SplashScreen: { launchShowDuration: 900, backgroundColor: '#141414', showSpinner: false },
     // Native push via Firebase Cloud Messaging (@capacitor-firebase/messaging).
     // Returns a real FCM token on BOTH iOS and Android, which the server sends to.
     // iOS also needs: Push Notifications + Background Modes capabilities (set in Xcode),
